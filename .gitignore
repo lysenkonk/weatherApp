@@ -1,3 +1,2 @@
-/dist
-/node_modules
-/img
+node_modules/
+dist/

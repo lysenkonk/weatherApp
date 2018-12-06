@@ -1,85 +1,83 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <link rel="icon" href="img/icon.png">
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
-    <link rel="stylesheet" href="dist/styles.css"> 
+    <link rel="stylesheet" href="dist/styles.css">
 </head>
+
 <body>
     <div class="header">
         <!-- <h1 class="title">Weather forecast</h1> -->
         <h2></h2>
-      </div>
-      
-      <div class="navbar">
-            <ul class="tabset">
-                    <li><a href="#day" class="active">Current weather</a></li>
-                    <li><a href="#7days">Week forecast</a></li>
-                    <li><a href="#14days">2Week forecast</a></li>
-    </ul>   
-      </div>
-      
-      <div class="row">
+    </div>
+
+    <div class="navbar">
+        <ul class="tabset">
+            <li><a href="#day" class="active">Current weather</a></li>
+            <li><a href="#7days">Week forecast</a></li>
+            <li><a href="#14days">2Week forecast</a></li>
+        </ul>
+    </div>
+
+    <div class="row">
         <div class="main">
-            <div id="day"> 
-                <table class="table ">
-                        <caption></caption>
-                            <thead>
-                                          <tr>
-                                            <th scope="col"></th>
-                                            <th scope="col">Morning</th>
-                                            <th scope="col">Day</th>
-                                            <th scope="col">Evening</th>
-                                            <th scope="col">Night</th>
+            <div id="day">
+                <table class="table">
+                    <caption></caption>
+                    <thead>
+                        <tr>
+                            <th scope="col"></th>
+                            <th scope="col">Morning</th>
+                            <th scope="col">Day</th>
+                            <th scope="col">Evening</th>
+                            <th scope="col">Night</th>
 
-                                          </tr>
-                                        </thead>
-                                        
-                                        <tr>
-                                            <th scope="row"></th>
-                                            <td><img src="" alt="icon" class="icon"></td>
-                                            <td><img src="" alt="icon" class="icon"></td>
-                                            <td><img src="" alt="icon" class="icon"></td>
-                                            <td><img src="" alt="icon" class="icon"></td>
+                        </tr>
+                    </thead>
 
-                                          </tr>
-                                          <tr>
-                                            <th scope="row">Description, %</th>
-                                            <td class="desc"></td>
-                                            <td class="desc"></td>
-                                            <td class="desc"></td>
-                                            <td class="desc"></td>
+                    <tr>
+                        <th scope="row"></th>
+                        <td><img class="icon"></td>
+                        <td><img   class="icon"></td>
+                        <td><img   class="icon"></td>
+                        <td><img   class="icon"></td>
 
-                                          </tr>
-                                        <tbody>
-                                          <tr>
-                                            <th scope="row">Temperature, &#176;C</th>
-                                            <td class ='temp'></td>
-                                            <td class ='temp'></td>
-                                            <td class ='temp'></td>
-                                            <td class ='temp'></td>
-                                          </tr>
-                                          <tr>
-                                            <th scope="row">Wind, m/s</th>
-                                            <td class="wind"></td>
-                                            <td class="wind"></td>
-                                            <td class="wind"></td>
-                                            <td class="wind"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Description, %</th>
+                        <td class="desc"></td>
+                        <td class="desc"></td>
+                        <td class="desc"></td>
+                        <td class="desc"></td>
 
-                                          </tr>
-                                          <tr>
-                                            <th scope="row">Humidity, %</th>
-                                            <td class="humidity"></td>
-                                            <td class="humidity"></td>
-                                            <td class="humidity"></td>
-                                            <td class="humidity"></td>
-                                          </tr>
-                                        </tbody>
-                                      </table>
-                            <!-- <h2 id="city"></h2>
+                    </tr>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Temperature, &#176;C</th>
+                            <td class='temp'></td>
+                            <td class='temp'></td>
+                            <td class='temp'></td>
+                            <td class='temp'></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Wind, m/s</th>
+                            <td class="wind"></td>
+                            <td class="wind"></td>
+                            <td class="wind"></td>
+                            <td class="wind"></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Humidity, %</th>
+                            <td class="humidity"></td>
+                            <td class="humidity"></td>
+                            <td class="humidity"></td>
+                            <td class="humidity"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!-- <h2 id="city"></h2>
                             <h5>Title description, Dec 7, 2017</h5>
                             <div id="middle">
                                     <img src="" alt="icon" id="icon">
@@ -90,8 +88,8 @@
                             </div>
                             <p id="desc"></p>
                             <p>trud exercitation ullamco.</p> -->
-                             
-                           <!-- <div class="container">
+
+                <!-- <div class="container">
                                 <h2 id="city"></h2>
                                     <div id="middle">
                                         <img src="" alt="icon" id="icon">
@@ -108,21 +106,21 @@
 
                                         </div>
                                 </div>          -->
-                    </div>
-                            <div id="7days">
-                                <p>
-                                </p>
-                            </div>
-                            <div id="14days">
-                                <p>
-                                </p>
-                            </div>        
+            </div>
+            <div id="7days">
+                <p>
+                </p>
+            </div>
+            <div id="14days">
+                <p>
+                </p>
+            </div>
 
-      </div>
-      
-      <!-- <div class="footer">
+        </div>
+
+        <!-- <div class="footer">
       </div> -->
-    <!-- <div class="tabs-holder">
+        <!-- <div class="tabs-holder">
         <ul class="tabset">
             <li><a class="active" href="#day">2 day forecast</a></li>
             <li><a href="#7days">7 day forecast</a></li>
@@ -151,9 +149,8 @@
                 </p>
             </div>        
         </div>-->
-    </div>  
-     <script src="dist/main.js"></script>
-  <!--   <script src="getWeather.js"></script> -->
-
+    </div>
+    <script src="dist/main.js"></script>
 </body>
+
 </html>
