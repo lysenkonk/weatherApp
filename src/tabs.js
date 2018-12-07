@@ -17,7 +17,6 @@ function addListenToTabs(data) {
 
     buttons.click(function (e) {
         let link = $(this);
-
         updateDOM(data, currentTab);
         if (!link.hasClass('active')) {
             buttons.removeClass('active');

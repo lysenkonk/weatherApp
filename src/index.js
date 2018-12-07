@@ -10,12 +10,7 @@ $(function () {
   let urlApiWeatherFor5Days = `https://api.openweathermap.org/data/2.5/forecast?q=`;
   let optionsReqApiWeather = `&units=metric&appid=${idOpenWeather}`;
 
-  
-
   locationImg.on('click', function () { getLocation() });
-
-
-
 
   function getNameCity() {
     return new Promise(function (resolve, reject) {
@@ -44,8 +39,9 @@ $(function () {
     $('.header h3').html(country);
     $.getJSON(`${urlApiWeatherFor5Days}${city},${country}${optionsReqApiWeather}`, function (data) {
       console.log(data.list);
-      updateDOM(data, currentTab);
       addListenToTabs(data);
+      updateDOM(data, currentTab);
+
     });
   }
 });
