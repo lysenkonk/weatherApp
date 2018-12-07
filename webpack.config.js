@@ -28,7 +28,6 @@ let conf = {
                 })
             }
         ]
-
     },
     plugins: [
         new ExtractTextPlugin("styles.css"),

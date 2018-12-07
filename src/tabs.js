@@ -1,4 +1,6 @@
-$(function(){
+import {updateDOM} from './updateDom.js';
+ $(function(){
+
     let buttons =$('.tabset a');
     let speed = 300;
     let currentTab = $(buttons.filter('.active').attr('href'));
@@ -9,10 +11,12 @@ $(function(){
             
         });
     currentTab.css('display', 'block');
+    
 
     buttons.click(function(e)
     {
         let link = $(this);
+
         if(!link.hasClass('active'))
         {
             buttons.removeClass('active');
@@ -22,7 +26,10 @@ $(function(){
             currentTab = $(link.attr('href'));
             currentTab.fadeIn(speed);
         });
+
         }
         e.preventDefault();
     });
-});
+
+
+}); 
