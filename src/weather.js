@@ -15,8 +15,8 @@ class Weather {
      }
  } */
 class Forecast {
-    constructor(city, date, data) {
-        this.city = city;
+    constructor(date, data) {
+       // this.city = city;
         this.date = date;
         this.data = data;
         this.weathers = data;

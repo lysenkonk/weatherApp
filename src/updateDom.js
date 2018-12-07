@@ -1,9 +1,6 @@
 import $ from 'jquery';
 import Forecast from './weather.js';
 
-function renderDom() {
-
-}
 function fillOutTable(elTemp, elSrc, elDesc, elHumidity, elWind, currForecast)
 {
     $(elTemp).html(currForecast.temperature);
@@ -13,10 +10,10 @@ function fillOutTable(elTemp, elSrc, elDesc, elHumidity, elWind, currForecast)
     $(elWind).html(currForecast.windSpeed);
 }
 
-function getDataForDefiniteDate(date, forecastMap)
+function getDataForDefiniteDate(date, forecastMap, currentTab)
 {
-    let buttons = $('.tabset a');
-    let currentTab = $(buttons.filter('.active').attr('href'));
+    //let buttons = $('.tabset a');
+    //let currentTab = $(buttons.filter('.active').attr('href'));
     let arrTemp = $(currentTab).find('.temp');
     let arrSrc = $(currentTab).find('.icon');
     let arrDesc = $(currentTab).find('.desc');
@@ -48,13 +45,11 @@ function getDataForDefiniteDate(date, forecastMap)
         }
     }
 }
-function updateDOM(data, city) {
+function updateDOM(data, currentTab) {
 
-
-
-    let forecast = new Forecast(city, new Date(), data.list);
+    let forecast = new Forecast(new Date(), data.list);
     let date = new Date();
 
-    getDataForDefiniteDate(date, forecast.weathers);
+    getDataForDefiniteDate(date, forecast.weathers, currentTab);
 }
 export { updateDOM };
